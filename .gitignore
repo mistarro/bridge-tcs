@@ -19,3 +19,8 @@
 *.exe
 *.out
 *.app
+
+# some subdirectories
+build/
+bin/
+lib/
