@@ -5,9 +5,8 @@ int main()
 {
 	bridge_tcs::core::Application application;
 	bridge_tcs::ui::console::Application applicationView;
-	
-	application.evtStarting.connect([&applicationView](){ applicationView.onStart(); });
-	application.evtExiting.connect([&applicationView](){ applicationView.onExit(); });
+
+	applicationView.setTarget(application);
 	
 	application.run();
 	return 0;
