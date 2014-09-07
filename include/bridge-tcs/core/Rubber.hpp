@@ -6,6 +6,8 @@ namespace core {
 
 class Rubber
 {
+public:
+	void play();
 };
 
 } // namespace core
